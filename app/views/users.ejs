@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h3>Users page!</h3>
+
+    <form
+      id="user-form"
+      method="POST"
+      action="http://192.168.99.100:3000/users/create"
+    >
+      <label for="name">Name</label> <input type="text" name="name" />
+      <label for="email">Email</label> <input type="email" name="email" />
+      <label for="password">Password</label>
+      <input type="password" name="password" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
